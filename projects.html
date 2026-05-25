@@ -15,6 +15,8 @@
   </head>
 
   <body>
+    <!-- NAVIGATION -->
+
     <div id="nav-placeholder"></div>
 
     <main>
@@ -34,7 +36,7 @@
         </div>
       </section>
 
-      <!-- FILTERS -->
+      <!-- PROJECT FILTERS -->
 
       <section class="section projects-section">
         <div class="container">
@@ -56,10 +58,18 @@
             </button>
           </div>
 
+          <!-- PROJECT GRID -->
+
           <div class="projects-grid">
             <!-- PROJECT 1 -->
 
-            <article class="card project-card" data-category="game">
+            <article
+              class="card project-card"
+              data-category="game"
+              data-title="Gameplay Prototype"
+              data-tech="Game Design, Systems Design, Prototyping"
+              data-description="A gameplay-focused prototype exploring progression systems, player feedback loops and interaction mechanics."
+            >
               <span class="project-type"> Game Prototype </span>
 
               <h3>Gameplay Prototype</h3>
@@ -78,7 +88,13 @@
 
             <!-- PROJECT 2 -->
 
-            <article class="card project-card" data-category="unity">
+            <article
+              class="card project-card"
+              data-category="unity"
+              data-title="Unity Adventure Project"
+              data-tech="Unity, C#, Gameplay Systems"
+              data-description="Built using Unity and C#. Focused on gameplay systems, player interactions and technical implementation."
+            >
               <span class="project-type"> Unity Project </span>
 
               <h3>Unity Adventure Project</h3>
@@ -97,7 +113,13 @@
 
             <!-- PROJECT 3 -->
 
-            <article class="card project-card" data-category="web">
+            <article
+              class="card project-card"
+              data-category="web"
+              data-title="Portfolio Website"
+              data-tech="HTML, CSS, JavaScript"
+              data-description="Responsive portfolio demonstrating accessibility, front-end architecture and modern development practices."
+            >
               <span class="project-type"> Web Development </span>
 
               <h3>Portfolio Website</h3>
@@ -116,7 +138,13 @@
 
             <!-- PROJECT 4 -->
 
-            <article class="card project-card" data-category="web">
+            <article
+              class="card project-card"
+              data-category="web"
+              data-title="Interactive Web Project"
+              data-tech="HTML, CSS, JavaScript"
+              data-description="User-focused web application emphasizing usability, responsive design and accessibility."
+            >
               <span class="project-type"> Web Application </span>
 
               <h3>Interactive Web Project</h3>
@@ -135,12 +163,42 @@
           </div>
         </div>
       </section>
+
+      <!-- PROJECT MODAL -->
+
+      <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+          <button class="modal-close" id="closeModal" aria-label="Close Modal">
+            ×
+          </button>
+
+          <span class="modal-label"> Project Details </span>
+
+          <h2 id="modalTitle"></h2>
+
+          <div class="modal-section">
+            <h3>Technologies</h3>
+            <p id="modalTech"></p>
+          </div>
+
+          <div class="modal-section">
+            <h3>Overview</h3>
+            <p id="modalDescription"></p>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <!-- FOOTER -->
 
     <div id="footer-placeholder"></div>
 
+    <!-- JAVASCRIPT -->
+
     <script src="js/navigation.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
