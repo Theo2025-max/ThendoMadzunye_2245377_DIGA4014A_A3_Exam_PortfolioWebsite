@@ -433,3 +433,123 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* SKILLS PAGE */
+
+.skills-intro {
+  max-width: 800px;
+  margin-top: var(--space-lg);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.skill-card h3 {
+  margin-bottom: var(--space-lg);
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skill-list li {
+  color: var(--color-text-muted);
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.skill-list li::before {
+  content: "•";
+  color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+}
+
+.skill-card {
+  transition: var(--transition);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* SKILLS RESPONSIVE */
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CONTACT PAGE */
+
+.contact-intro {
+  max-width: 800px;
+  margin-top: var(--space-lg);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-2xl);
+}
+
+.contact-item {
+  margin-top: var(--space-lg);
+}
+
+.contact-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* FORM STYLING */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--color-text);
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 2px solid var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+/* CONTACT RESPONSIVE */
+
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
