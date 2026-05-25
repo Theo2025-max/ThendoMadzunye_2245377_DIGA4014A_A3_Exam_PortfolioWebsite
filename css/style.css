@@ -206,10 +206,19 @@ button:focus-visible {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
+  align-items: center;
 }
 
-.logo span {
-  color: var(--color-secondary);
+.logo img {
+  height: 65px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 32px;
+  }
 }
 
 .nav-links {
@@ -662,9 +671,7 @@ button:focus-visible {
   }
 }
 
-/* ==========================================
-   PROJECT MODAL
-========================================== */
+/* PROJECT MODAL */
 
 .project-card {
   cursor: pointer;
@@ -776,9 +783,7 @@ button:focus-visible {
   }
 }
 
-/* ==========================================
-   SCROLL REVEAL
-========================================== */
+/* SCROLL REVEAL */
 
 .section,
 .card {
