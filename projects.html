@@ -6,16 +6,133 @@
 
     <title>Projects | Thendo Portfolio</title>
 
+    <meta
+      name="description"
+      content="Projects showcasing software engineering, game development and web development work."
+    />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <div id="nav-placeholder"></div>
 
     <main>
+      <!-- HERO -->
+
       <section class="section">
         <div class="container">
-          <h1>Projects Page</h1>
-          <p>Projects Page under construction.</p>
+          <p class="hero-tag">Projects</p>
+
+          <h1>Selected Work & Technical Projects</h1>
+
+          <p class="projects-intro">
+            These projects demonstrate my development process, technical skills,
+            problem-solving ability and interest in creating meaningful digital
+            experiences.
+          </p>
+        </div>
+      </section>
+
+      <!-- FILTERS -->
+
+      <section class="section projects-section">
+        <div class="container">
+          <div class="filter-controls">
+            <button class="filter-btn active-filter" data-filter="all">
+              All
+            </button>
+
+            <button class="filter-btn" data-filter="game">
+              Game Prototype
+            </button>
+
+            <button class="filter-btn" data-filter="unity">
+              Unity Projects
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+              Web Development
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- PROJECT 1 -->
+
+            <article class="card project-card" data-category="game">
+              <span class="project-type"> Game Prototype </span>
+
+              <h3>Gameplay Prototype</h3>
+
+              <p>
+                Experimental game prototype focused on gameplay mechanics,
+                player progression and interaction systems.
+              </p>
+
+              <div class="tech-tags">
+                <span>Game Design</span>
+                <span>Prototyping</span>
+                <span>Systems Design</span>
+              </div>
+            </article>
+
+            <!-- PROJECT 2 -->
+
+            <article class="card project-card" data-category="unity">
+              <span class="project-type"> Unity Project </span>
+
+              <h3>Unity Adventure Project</h3>
+
+              <p>
+                Developed using Unity with a focus on gameplay systems, user
+                interaction and technical implementation.
+              </p>
+
+              <div class="tech-tags">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Game Systems</span>
+              </div>
+            </article>
+
+            <!-- PROJECT 3 -->
+
+            <article class="card project-card" data-category="web">
+              <span class="project-type"> Web Development </span>
+
+              <h3>Portfolio Website</h3>
+
+              <p>
+                Responsive portfolio demonstrating accessibility, front-end
+                architecture and modern web practices.
+              </p>
+
+              <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+
+            <!-- PROJECT 4 -->
+
+            <article class="card project-card" data-category="web">
+              <span class="project-type"> Web Application </span>
+
+              <h3>Interactive Web Project</h3>
+
+              <p>
+                User-focused web application emphasizing usability, responsive
+                design and accessibility.
+              </p>
+
+              <div class="tech-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
@@ -23,6 +140,7 @@
     <div id="footer-placeholder"></div>
 
     <script src="js/navigation.js"></script>
+    <script src="js/projects.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
