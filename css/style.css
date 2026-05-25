@@ -242,3 +242,77 @@ button:focus-visible {
 .footer p {
   color: var(--color-text-muted);
 }
+
+/* HOME PAGE */
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+}
+
+.hero-tag {
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.hero-description {
+  max-width: 700px;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+.skills-preview,
+.projects-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.contact-cta {
+  text-align: center;
+}
+
+.contact-cta h2 {
+  margin-bottom: var(--space-md);
+}
+
+.contact-cta p {
+  max-width: 700px;
+  margin: 0 auto var(--space-xl);
+}
+
+/* RESPONSIVE HOME PAGE */
+
+@media (max-width: 768px) {
+  .skills-preview,
+  .projects-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
