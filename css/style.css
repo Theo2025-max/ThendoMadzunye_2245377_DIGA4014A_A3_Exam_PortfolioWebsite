@@ -828,3 +828,65 @@ button:focus-visible {
 
   margin-bottom: 1rem;
 }
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  display: none;
+
+  background: transparent;
+
+  border: none;
+
+  color: white;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+}
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    width: 100%;
+
+    background: var(--color-background);
+
+    flex-direction: column;
+
+    gap: 0;
+
+    border-top: 1px solid #334155;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+
+    padding: 1rem;
+  }
+
+  .nav-links.nav-open {
+    max-height: 400px;
+  }
+}

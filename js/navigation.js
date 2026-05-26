@@ -20,6 +20,8 @@ async function initializeComponents() {
   await loadComponent("footer-placeholder", "components/footer.html");
 
   highlightActivePage();
+
+  initializeMobileNav();
 }
 
 function highlightActivePage() {
@@ -37,3 +39,21 @@ function highlightActivePage() {
 }
 
 initializeComponents();
+
+function initializeMobileNav() {
+  const hamburger = document.getElementById("hamburger");
+
+  const navLinks = document.getElementById("navLinks");
+
+  if (!hamburger || !navLinks) return;
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-open");
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("nav-open");
+    });
+  });
+}
