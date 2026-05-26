@@ -814,3 +814,17 @@ button:focus-visible {
 .form-error {
   color: #ef4444;
 }
+
+/* PROJECT CARD IMAGES */
+
+.project-image {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: var(--radius-md);
+
+  margin-bottom: 1rem;
+}
