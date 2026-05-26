@@ -799,3 +799,18 @@ button:focus-visible {
     opacity 0.8s ease,
     transform 0.8s ease;
 }
+
+/* CONTACT FORM STATUS */
+
+#formStatus {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.form-success {
+  color: var(--color-success);
+}
+
+.form-error {
+  color: #ef4444;
+}
